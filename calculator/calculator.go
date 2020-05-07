@@ -4,6 +4,10 @@ import (
 	"fmt"
 )
 
+func Plus(_x int32, _y int32) int32 {
+	return _x + _y
+}
+
 func main() {
 	fmt.Print("중간고사 계산기 프로젝트입니다. GG171012황현웅\n")
 
@@ -25,7 +29,10 @@ func main() {
 	fmt.Print("1.덧셈 2.뺄셈 3.곱셈 4.나눗셈\n")
 	fmt.Scan(&operator)
 
-	// Test Print
-	fmt.Println(x, y, operator)
+	switch operator {
+	case 1:
+		fmt.Println("덧셈 결과값 : ", Plus(x, y))
+
+	}
 
 }
