@@ -12,6 +12,10 @@ func Minus(_x int32, _y int32) int32 {
 	return _x - _y
 }
 
+func Multiply(_x int32, _y int32) int32 {
+	return _x * _y
+}
+
 func main() {
 	fmt.Print("중간고사 계산기 프로젝트입니다. GG171012황현웅\n")
 
@@ -38,6 +42,8 @@ func main() {
 		fmt.Println("덧셈 결과값 : ", Plus(x, y))
 	case 2:
 		fmt.Println("뺄셈 결과값 :", Minus(x, y))
+	case 3:
+		fmt.Println("곱셈 결과값 : ", Multiply(x, y))
 
 	}
 
